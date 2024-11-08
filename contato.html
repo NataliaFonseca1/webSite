@@ -24,12 +24,12 @@
             <h2 class="verde">te ajudar?</h2>
             <p>Estou à disposição para ajudar no projeto da sua empresa.</p>
             <div>
-                <form>
-                    <input type="text" placeholder="Seu nome" required/>
-                    <input type="email" placeholder="Seu e-mail" required/>
-                    <input type="tel" placeholder="Seu telefone (opcional)"/>
-                    <textarea placeholder="Sua mensagem" required></textarea>
-                    <button onclick="window.location.href='index.html'" type="submit">Enviar</button>
+                <form id="form" action="confirmation.html" method="post">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required><br>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br>
+                    <input type="number" id="idade" name="idade" placeholder="Idade" required><br>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
             <div class="section-contact-item">
@@ -55,3 +55,5 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
+
